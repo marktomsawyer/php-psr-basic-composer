@@ -1,0 +1,27 @@
+{
+    "name": "marktomsawyer/php-psr-basic-composer",
+    "description": "Composer básico",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [{
+        "name": "Mark Tom Sawyer",
+        "email": "mark@tomsawyer.com.br",
+        "role": "Developer",
+        "homepage": "https://tomsawyer.com.br"
+    }],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "source\\": "src/"
+        },
+        "files": [
+            "src/config.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "6.1.*"
+    }
+}
